@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Akita Ramen Kraków — IN RAMEN WE TRUST</title>
+  <link rel="icon" type="image/png" href="../logo-dark.png">
+  <meta name="description" content="Akita Ramen Kraków — autentyczny japoński ramen. Węgłowa 4/LU 10, 31-063 Kraków.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <nav id="navbar" class="navbar">
+    <div class="nav-inner">
+      <a href="../"><img id="navLogo" class="nav-logo-img" src="../logo-light.png" data-light="../logo-light.png" data-dark="../logo-dark.png" alt="Akita Ramen"></a>
+      <ul class="nav-links"><li><a href="#o-nas">O nas</a></li><li><a href="#menu">Menu</a></li><li><a href="#deals">Deals</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#opinie">Opinie</a></li><li><a href="#kontakt">Kontakt</a></li><li><a href="../gdansk/">← Gdańsk</a></li></ul>
+      <a href="tel:+48 796 305 669" class="nav-cta"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span style="margin-left:.4rem">796 305 669</span></a>
+      <div class="nav-hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <section id="hero" class="hero">
+    <div class="hero-bg" style="background-image:url('../661707127_18529708504070034_6469338340677249345_n.jpg')"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge" id="heroBadge"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span style="margin-left:.4rem">Akita Ramen Kraków</span></div>
+      <h1 class="hero-title"><span class="line" id="line1">Akita</span><span class="line accent" id="line2">Ramen</span></h1>
+      <p class="hero-sub" id="heroSub">In Ramen We Trust · Kraków</p>
+      <div class="hero-ctas" id="heroCtas">
+        <a href="#menu" class="btn btn-primary">Zobacz menu</a>
+        <a href="#kontakt" class="btn btn-outline">Znajdź nas</a>
+      </div>
+    </div>
+    <div class="scroll-hint" id="scrollHint"><span>Przewiń</span><div class="scroll-line"></div></div>
+  </section>
+
+  <div class="trust-bar"><div class="trust-bar-inner">
+    <div class="trust-item">Akita Ramen Kraków</div><div class="trust-item">⭐ Google 4,8</div><div class="trust-item">In Ramen We Trust</div><div class="trust-item">Węgłowa 4/LU 10</div><div class="trust-item">Family Friendly</div><div class="trust-item">Akita Ramen Kraków</div><div class="trust-item">⭐ Google 4,8</div><div class="trust-item">In Ramen We Trust</div><div class="trust-item">Węgłowa 4/LU 10</div><div class="trust-item">Family Friendly</div>
+  </div></div>
+
+
+  <div class="order-banner">
+    <div class="order-inner">
+      <div class="order-text"><h3>Zamów ramen do domu</h3><p>Dowóz i odbiór — wybierz swoją platformę.</p></div>
+      <div class="order-btns">
+        <a href="#" class="order-btn primary disabled" title="Wkrótce — własna zamawiarka ChoiceQR">Zamów online · wkrótce</a>
+        <a href="#" class="order-btn disabled" title="Link do uzupełnienia">Uber Eats</a>
+        <a href="#" class="order-btn disabled" title="Link do uzupełnienia">Glovo</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="o-nas" class="section about-section">
+    <div class="container"><div class="about-grid">
+      <div class="about-photo" data-gsap="slide-left"><div class="img-ph" style="height:100%">zdjęcie wnętrza — Kraków</div><div class="about-photo-accent"></div><div class="about-photo-badge">Kraków ♥</div></div>
+      <div class="about-text" data-gsap="slide-right">
+        <span class="section-label">O restauracji</span>
+        <h2 class="section-title">Gdzie ramen<br>to <span class="accent">religia</span></h2>
+        <p class="about-body">Nasz pierwszy dom — w samym sercu Krakowa, przy klimatycznej ulicy Węgłowej. To tu zaczęła się historia Akita Ramen: autentyczne japońskie smaki, długo gotowane buliony i ciepła, rodzinna atmosfera.</p>
+        <p class="about-body">Nasze buliony gotowane są godzinami z najlepszych składników, a każda miska to małe dzieło sztuki. <em>IN RAMEN WE TRUST.</em></p>
+      </div>
+    </div></div>
+  </section>
+
+  <section id="menu" class="section menu-section">
+    <div class="container">
+      <div class="section-header"><div><span class="section-label">Nasze menu</span><h2 class="section-title">Miseczka <span class="accent">szczęścia</span></h2></div>
+      <p>Standardowo: makaron alkaliczny, opalane nori, bulion i olej smakowy. Wybierz stopień ostrości: 0 niepikantny · 1 lekko · 2 średnio · 3 bardzo ostry.</p></div>
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-target="p-ramen-krakow">Ramen</button>
+        <button class="menu-tab" data-target="p-startery-krakow">Startery</button>
+        <button class="menu-tab" data-target="p-napoje-krakow">Napoje</button><button class="menu-tab" data-target="p-alkohol-krakow">Alkohol</button>
+      </div>
+      <div class="menu-panel active" id="p-ramen-krakow"><div class="menu-cards-grid">
+        <div class="menu-card">
+          <div class="menu-card-img-wrap"><div class="img-ph">zdjęcie wkrótce</div></div>
+          <div class="menu-card-body">
+            <div class="menu-card-tags"><span class="mtag tag-spicy">Spicy</span></div>
+            <div class="menu-card-name">Akita Ramen / Akita Spicy Love</div>
+            <p class="menu-card-desc">Szarpana łopatka, kanpyo, wakame, szczypta chili, sezam, jajko, dymka, nori, olej sezamowy.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">46 zł</span>
+              <span class="menu-card-tag">tare: shoyu</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img-wrap"><div class="img-ph">zdjęcie wkrótce</div></div>
+          <div class="menu-card-body">
+            
+            <div class="menu-card-name">Tokyo Old School</div>
+            <p class="menu-card-desc">Opalany boczek chashu, bambus, palony por, jajko, 2× nori, olej sezamowy.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">46 zł</span>
+              <span class="menu-card-tag">tare: shoyu</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img-wrap"><div class="img-ph">zdjęcie wkrótce</div></div>
+          <div class="menu-card-body">
+            
+            <div class="menu-card-name">Tricity Chikin Ramen</div>
+            <p class="menu-card-desc">Soczysta pierś kurczaka w panko, imbir gari, biała kapusta, dymka, sezam, jajko.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">48 zł</span>
+              <span class="menu-card-tag">tare: shoyu</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img-wrap"><div class="img-ph">zdjęcie wkrótce</div></div>
+          <div class="menu-card-body">
+            <div class="menu-card-tags"><span class="mtag tag-spicy">Spicy</span></div>
+            <div class="menu-card-name">Red Alert Tantan</div>
+            <p class="menu-card-desc">Pikantna mielona wołowina, kapusta pekińska w sosie ostrygowym, chutney z czerwonej cebulki, orzechy nerkowca, jajko, nori, olej rayu, togarashi.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">49 zł</span>
+              <span class="menu-card-tag">tare: peanut butter tantan</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img-wrap"><div class="img-ph">zdjęcie wkrótce</div></div>
+          <div class="menu-card-body">
+            <div class="menu-card-tags"><span class="mtag tag-spicy">Spicy</span><span class="mtag tag-limited">Limited</span></div>
+            <div class="menu-card-name">K-POP Miso Jiro</div>
+            <p class="menu-card-desc">Boczek chashu z woka z kimchi, biała kapusta, dymka, por, kiełki mung, jajko, jiro style, aioli.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">50 zł</span>
+              <span class="menu-card-tag">tare: miso</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img-wrap"><div class="img-ph">zdjęcie wkrótce</div></div>
+          <div class="menu-card-body">
+            <div class="menu-card-tags"><span class="mtag tag-veg">Vegan</span><span class="mtag tag-spicy">Spicy</span></div>
+            <div class="menu-card-name">Spring Shoyu Vegan</div>
+            <p class="menu-card-desc">Inari tofu, pomidor, palony por, wakame, togarashi, dymka, olej sezamowy, 2× nori.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">46 zł</span>
+              <span class="menu-card-tag">tare: shoyu vegan</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img-wrap"><div class="img-ph">zdjęcie wkrótce</div></div>
+          <div class="menu-card-body">
+            <div class="menu-card-tags"><span class="mtag tag-veg">Vegan</span><span class="mtag tag-spicy">Spicy</span><span class="mtag tag-limited">Limited</span></div>
+            <div class="menu-card-name">Mapo Tofu Vegan</div>
+            <p class="menu-card-desc">Mapo tofu w pikantnej paście doubanjiang, benishoga, kiełki mung, biała kapusta, sezam, pieprz syczuański, dymka/kolendra, olej rayu.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">48 zł</span>
+              <span class="menu-card-tag">tare: vegan tantan</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img-wrap"><div class="img-ph">zdjęcie wkrótce</div></div>
+          <div class="menu-card-body">
+            
+            <div class="menu-card-name">Kids Ramen / Kids Veggie</div>
+            <p class="menu-card-desc">Kurczak, jajko / tofu, wakame.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">36 zł</span>
+              <span class="menu-card-tag">ramen</span>
+            </div>
+          </div>
+        </div></div>
+        <p class="menu-note">Dodatki do ramenu: dodatkowy wonton 7 zł · jajko marynowane 7 zł · mięso 15 zł · dodatek warzywny 6 zł · Kaedama (extra makaron) 13 zł. Możliwość wymiany mięsa na inari tofu.</p></div>
+      <div class="menu-panel" id="p-startery-krakow"><div class="tsukemono-block"><div class="tsukemono-head"><h3>Tsukemono <span>pikle, fermenty i przysmaki — każda pozycja osobno</span></h3><span class="menu-card-price">19 zł / poz.</span></div><div class="tsukemono-list"><div class="tsk-item"><span class="tsk-name">Rayu daikon</span><span class="mtag tag-ng">Nongluten</span><p class="tsk-desc">marynowana rzodkiew japońska w dżemiku z chilli, imbiru i czosnku</p></div><div class="tsk-item"><span class="tsk-name">Goma gari</span><span class="mtag tag-ng">Nongluten</span><p class="tsk-desc">młody, słodkawy imbir marynowany z czarnym sezamem</p></div><div class="tsk-item"><span class="tsk-name">Kitsune</span><p class="tsk-desc">słodkie, smażone plastry inari tofu</p></div><div class="tsk-item"><span class="tsk-name">Pikle non gluten</span><span class="mtag tag-ng">Nongluten</span><p class="tsk-desc">sezonowe warzywa w słodko-słonej zalewie z pieprzem syczuańskim i kolendrą</p></div><div class="tsk-item"><span class="tsk-name">Kyuri zuke</span><p class="tsk-desc">tradycyjnie japońskie piklowane ogórki</p></div><div class="tsk-item"><span class="tsk-name">Shiitake tazukuri</span><p class="tsk-desc">pełne umami grzyby shiitake w słodko-słonej glazurze</p></div><div class="tsk-item"><span class="tsk-name">Kimchi</span><p class="tsk-desc">koreańska kiszonka, zwyczajowo pikantna</p></div></div></div><div class="menu-cards-grid">
+        <div class="menu-card">
+          <div class="menu-card-img-wrap"><div class="img-ph">zdjęcie wkrótce</div></div>
+          <div class="menu-card-body">
+            
+            <div class="menu-card-name">Krewetki w tempurze 5×</div>
+            <p class="menu-card-desc">Krewetki w lekkim cieście (wersja non gluten +4 zł). Sosy: srirachamayo, wasabimayo, tonkatsu, sweet chilli.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">45 zł</span>
+              <span class="menu-card-tag">starter</span>
+            </div>
+          </div>
+        </div>
+        <div class="menu-card">
+          <div class="menu-card-img-wrap"><div class="img-ph">zdjęcie wkrótce</div></div>
+          <div class="menu-card-body">
+            
+            <div class="menu-card-name">Pierożki wonton 5×</div>
+            <p class="menu-card-desc">Mielona wołowina, kolendra, sos ostrygowy, bulion, dymka.</p>
+            <div class="menu-card-footer">
+              <span class="menu-card-price">35 zł</span>
+              <span class="menu-card-tag">starter</span>
+            </div>
+          </div>
+        </div></div></div>
+      <div class="menu-panel" id="p-napoje-krakow">
+        <div class="menu-list"><div class="menu-list-row"><span class="menu-list-name">Lemoniada domowa<small>klasyczna / mango-imbir / lawendowa / grapefruit-rozmaryn · 400 ml</small></span><span class="menu-list-price">18 zł</span></div><div class="menu-list-row"><span class="menu-list-name">Shroom<small>power / relax · 330 ml</small></span><span class="menu-list-price">21 zł</span></div><div class="menu-list-row"><span class="menu-list-name">Iced Matcha Latte<small>300 ml</small></span><span class="menu-list-price">21 zł</span></div><div class="menu-list-row"><span class="menu-list-name">Kawa po wietnamsku<small>czarna / z mlekiem</small></span><span class="menu-list-price">16 zł</span></div><div class="menu-list-row"><span class="menu-list-name">Herbata (dzbanek)<small>zapytaj obsługę o dostępne · 500 ml</small></span><span class="menu-list-price">20/21/25 zł</span></div><div class="menu-list-row"><span class="menu-list-name">Napoje Fritz<small>kola / kola zero / misch masch · 330 ml</small></span><span class="menu-list-price">16 zł</span></div><div class="menu-list-row"><span class="menu-list-name">Matcha-Yuzu Lemonade<small>330 ml</small></span><span class="menu-list-price">16 zł</span></div><div class="menu-list-row"><span class="menu-list-name">Woda<small>gazowana / niegazowana · 330 ml</small></span><span class="menu-list-price">10 zł</span></div></div></div>
+      <div class="menu-panel" id="p-alkohol-krakow">
+        <div class="menu-list"><div class="menu-list-row"><span class="menu-list-name">Kirin Ichiban Lager / 0%<small>330 ml</small></span><span class="menu-list-price">17 zł</span></div><div class="menu-list-row"><span class="menu-list-name">Asahi<small>330 ml</small></span><span class="menu-list-price">17 zł</span></div><div class="menu-list-row"><span class="menu-list-name">Pils<small>500 ml</small></span><span class="menu-list-price">18 zł</span></div><div class="menu-list-row"><span class="menu-list-name">IPA<small>500 ml</small></span><span class="menu-list-price">20 zł</span></div><div class="menu-list-row"><span class="menu-list-name">APA<small>500 ml</small></span><span class="menu-list-price">20 zł</span></div><div class="menu-list-row"><span class="menu-list-name">Wheat / weizen<small>500 ml</small></span><span class="menu-list-price">19 zł</span></div><div class="menu-list-row"><span class="menu-list-name">Piwo bezalkoholowe<small>500 ml</small></span><span class="menu-list-price">20 zł</span></div><div class="menu-list-row"><span class="menu-list-name">Choya<small>150 ml / 1000 ml</small></span><span class="menu-list-price">16/78 zł</span></div><div class="menu-list-row"><span class="menu-list-name">Choya Spritzer</span><span class="menu-list-price">24 zł</span></div></div>
+        <p class="menu-note">Zapytaj obsługę o dostępne pozycje alkoholowe.</p></div>
+      <p class="menu-note">Przy grupach od 6 osób doliczamy 10% serwisu. Karta alergenów dostępna u obsługi.</p>
+    </div>
+  </section>
+
+  <section id="deals" class="section deals-section">
+    <div class="container">
+      <div class="gallery-header" data-gsap="fade-up"><span class="section-label">Hot Ramen Deals</span><h2 class="section-title">Zniżki dla <span class="accent">swoich</span></h2>
+      <p style="color:var(--c-text-muted);max-width:480px;margin:0 auto;line-height:1.7;">Mamy kilka programów dla naszej ramenowej rodziny. Szczegóły warunków uzupełnimy wkrótce.</p></div>
+      <div class="deals-grid"><div class="deal-card"><span class="deal-icon">🍜</span><div class="deal-name">Rameniarze</div><p class="deal-desc">Program lojalnościowy dla stałych bywalców.</p><p class="deal-ph">warunki — do uzupełnienia</p></div><div class="deal-card"><span class="deal-icon">🐕</span><div class="deal-name">Z czworonogiem</div><p class="deal-desc">Przychodzisz z psem? Mamy coś dla Was.</p><p class="deal-ph">warunki — do uzupełnienia</p></div><div class="deal-card"><span class="deal-icon">🚲</span><div class="deal-name">Rowerzyści</div><p class="deal-desc">Przyjeżdżasz rowerem — łap zniżkę.</p><p class="deal-ph">warunki — do uzupełnienia</p></div><div class="deal-card"><span class="deal-icon">🎓</span><div class="deal-name">Studenci</div><p class="deal-desc">Specjalna oferta studencka.</p><p class="deal-ph">warunki — do uzupełnienia</p></div></div>
+    </div>
+  </section>
+
+  <section id="galeria" class="section gallery-section">
+    <div class="container">
+      <div class="gallery-header" data-gsap="fade-up"><span class="section-label">Galeria</span><h2 class="section-title">Jedz <span class="accent">oczami</span></h2></div>
+      <div class="quote-block" style="margin-bottom:3rem;">
+        <span class="quote-mark">"</span>
+        <p class="quote-text">Jedzenie powinno zaspokajać głód — nie próżność, sprawiać przyjemność — nie trudność, być doznaniem kulinarnym — nie intelektualnym i dawać okazje do dzielenia się radością posiłku z bliskimi. Niekoniecznie na Facebooku…</p>
+        <div class="quote-author">— Tessa Caponi-Borawska</div>
+      </div>
+      <div class="swiper history-swiper" id="gallerySwiper-krakow">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><div class="history-slide"><div class="img-ph">zdjęcie wnętrza / dania — Kraków</div></div></div><div class="swiper-slide"><div class="history-slide"><div class="img-ph">zdjęcie wnętrza / dania — Kraków</div></div></div><div class="swiper-slide"><div class="history-slide"><div class="img-ph">zdjęcie wnętrza / dania — Kraków</div></div></div><div class="swiper-slide"><div class="history-slide"><div class="img-ph">zdjęcie wnętrza / dania — Kraków</div></div></div>
+        </div>
+        <div class="swiper-pagination history-pagination"></div>
+      </div>
+      <p class="menu-note">Galeria wnętrz Kraków — czekamy na zdjęcia w pełnej rozdzielczości.</p>
+    </div>
+  </section>
+
+  <section id="opinie" class="section testimonials-section">
+    <div class="container">
+      <div class="testimonials-header" data-gsap="fade-up"><span class="section-label">Opinie gości</span><h2 class="section-title" style="color:white;">Co mówią <span style="color:var(--c-primary);">o nas</span></h2></div>
+      <div class="swiper swiper-testimonials" id="testimonialsSwiper"><div class="swiper-wrapper"><div class="swiper-slide"><div class="testimonial-card">
+              <span class="testimonial-quote">"</span>
+              <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+              <p class="testimonial-text">Absolutely incredible ramen experience in Kraków! Bulion był bogaty, głęboki i idealnie zbalansowany, a makaron miał świetną teksturę. Jedna z najlepszych misek, jakie jadłam — a jadłam ramen w Japonii!</p>
+              <div class="testimonial-author"><div class="testimonial-avatar">M</div><div><div class="testimonial-name">Manyee Fung</div><div class="testimonial-source">Recenzja Google</div></div></div>
+            </div></div><div class="swiper-slide"><div class="testimonial-card">
+              <span class="testimonial-quote">"</span>
+              <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+              <p class="testimonial-text">Jedzenie super, obsługa miła. Jeden z najlepszych ramenów, jakie jadłam. Jedyny minus to kolejka, ale czekaliśmy tylko 15 minut — i absolutnie warto.</p>
+              <div class="testimonial-author"><div class="testimonial-avatar">M</div><div><div class="testimonial-name">Mădălina Onică</div><div class="testimonial-source">Recenzja Google</div></div></div>
+            </div></div><div class="swiper-slide"><div class="testimonial-card">
+              <span class="testimonial-quote">"</span>
+              <div class="testimonial-stars"><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg><svg viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg></div>
+              <p class="testimonial-text">Świetne miejsce w historycznym centrum Krakowa, przytulna atmosfera. Kelner doradził idealny ramen. Skończyło się na wonton ramen — perfekcja!</p>
+              <div class="testimonial-author"><div class="testimonial-avatar">I</div><div><div class="testimonial-name">Ivan Kosenko</div><div class="testimonial-source">Recenzja Google</div></div></div>
+            </div></div></div><div class="swiper-pagination t-pagination"></div></div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="section contact-section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:3.5rem;" data-gsap="fade-up"><span class="section-label">Kontakt &amp; Lokalizacja</span><h2 class="section-title">Znajdź nas <span class="accent">w Krakowie</span></h2></div>
+      <div class="contact-grid">
+        <div class="contact-info-block" data-gsap="slide-left">
+          <a href="tel:+48 796 305 669" class="contact-phone">796 305 669</a>
+          <div class="contact-address"><strong>Akita Ramen Kraków</strong><br>Węgłowa 4/LU 10<br>31-063 Kraków</div>
+          <a href="mailto:akitarestaurants@gmail.com" class="contact-email"><svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><span>akitarestaurants@gmail.com</span></a>
+          <div class="social-row"><a href="https://instagram.com/akitaramen" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.43.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.43.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.43-.36-1.06-.41-2.23C2.17 15.58 2.16 15.2 2.16 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.43-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16M12 0C8.74 0 8.33.01 7.05.07 5.78.13 4.9.33 4.14.63c-.79.31-1.46.72-2.13 1.38C1.35 2.68.94 3.35.63 4.14.33 4.9.13 5.78.07 7.05.01 8.33 0 8.74 0 12s.01 3.67.07 4.95c.06 1.27.26 2.15.56 2.91.31.79.72 1.46 1.38 2.13.67.66 1.34 1.07 2.13 1.38.76.3 1.64.5 2.91.56C8.33 23.99 8.74 24 12 24s3.67-.01 4.95-.07c1.27-.06 2.15-.26 2.91-.56.79-.31 1.46-.72 2.13-1.38.66-.67 1.07-1.34 1.38-2.13.3-.76.5-1.64.56-2.91.06-1.28.07-1.69.07-4.95s-.01-3.67-.07-4.95c-.06-1.27-.26-2.15-.56-2.91-.31-.79-.72-1.46-1.38-2.13-.67-.66-1.34-1.07-2.13-1.38-.76-.3-1.64-.5-2.91-.56C15.67.01 15.26 0 12 0z"/><path d="M12 5.84A6.16 6.16 0 1 0 18.16 12 6.16 6.16 0 0 0 12 5.84M12 16a4 4 0 1 1 4-4 4 4 0 0 1-4 4"/><circle cx="18.41" cy="5.59" r="1.44"/></svg></a><a href="https://facebook.com/akitadobrenoodle" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.15 8.44 9.94v-7.03H7.9v-2.91h2.54V9.85c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.24.19 2.24.19v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.91h-2.34V22c4.78-.79 8.44-4.94 8.44-9.94z"/></svg></a></div>
+          <div class="contact-btns">
+            <a href="tel:+48 796 305 669" class="btn btn-primary btn-pulse"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>Zadzwoń teraz</span></a>
+            <a href="https://www.google.com/maps/search/?api=1&query=Akita%20Ramen%20W%C4%99g%C5%82owa%204/LU%2010%2031-063%20Krak%C3%B3w" target="_blank" rel="noopener" class="btn btn-dark"><svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg><span>Wizytówka Google</span></a>
+          </div>
+          <div class="hours-table">
+            <h3>Godziny otwarcia <span class="hours-badge">do potwierdzenia</span></h3>
+            <div class="hours-row"><span class="hours-day">Poniedziałek – Piątek</span><span class="hours-time">12:00 – 21:00</span></div>
+            <div class="hours-row"><span class="hours-day">Sobota</span><span class="hours-time">12:00 – 22:00</span></div>
+            <div class="hours-row"><span class="hours-day">Niedziela</span><span class="hours-time">12:00 – 21:00</span></div>
+          </div>
+        </div>
+        <div class="map-wrap" data-gsap="slide-right">
+          <iframe src="https://maps.google.com/maps?q=Akita%20Ramen%20W%C4%99g%C5%82owa%204/LU%2010%2031-063%20Krak%C3%B3w&z=15&output=embed" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Akita Ramen Kraków na mapie"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <span class="footer-logo">AKITA RAMEN</span>
+        <span class="footer-sep">·</span>
+        <span class="footer-address">Kraków · Gdańsk</span>
+      </div>
+      <div class="footer-right">
+        © <span id="footer-year"></span> Akita Ramen. Wszelkie prawa zastrzeżone.<br>
+        In Ramen We Trust
+      </div>
+    </div>
+  </footer>
+<a href="tel:+48 796 305 669" class="float-cta"><svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><span>Zadzwoń</span></a>
+  <script src="../app.js"></script>
+  <script>
+    window.Userback = window.Userback || {};
+    Userback.access_token = "A-ZwtcMYQi2RZRjFY7d5ECbDHAL";
+    Userback.custom_data = { site: 'akita-krakow', business: 'Akita Ramen Kraków' };
+    (function(d){var s=d.createElement('script');s.async=true;s.src='https://static.userback.io/widget/v1.js';(d.head||d.body).appendChild(s);})(document);
+  </script>
+</body>
+</html>
