@@ -58,13 +58,7 @@ gsap.registerPlugin(ScrollTrigger);
       });
     });
 
-    // Staggered menu cards
-    document.querySelectorAll('.menu-cards-grid .menu-card').forEach(function(el, i) {
-      gsap.from(el, {
-        y: 40, opacity: 0, duration: 0.7, ease: 'power2.out', delay: i * 0.08,
-        scrollTrigger: { trigger: el, start: 'top 88%', once: true }
-      });
-    });
+    // Karty menu — bez animacji wejścia (zawsze widoczne; reveal psuł się przy przełączaniu zakładek)
 
     // Gallery stagger
     document.querySelectorAll('.gallery-item').forEach(function(el, i) {
