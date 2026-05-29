@@ -171,11 +171,11 @@ document.querySelectorAll('.menu-tab').forEach(function(tab){
   });
 });
 
-/* ===== Karuzela historii ===== */
-if(document.getElementById('historySwiper')){
-  new Swiper('#historySwiper',{
+/* ===== Karuzele history-swiper (galeria na podstronach + ew. historia) ===== */
+document.querySelectorAll('.swiper.history-swiper').forEach(function(el){
+  new Swiper(el,{
     slidesPerView:1.1, spaceBetween:20,
-    pagination:{ el:'.history-pagination', clickable:true },
+    pagination:{ el: el.querySelector('.history-pagination'), clickable:true },
     breakpoints:{ 640:{slidesPerView:2.2}, 1024:{slidesPerView:3} }
   });
-}
+});
